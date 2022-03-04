@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Fugaz+One:regular);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --cor01: #F2BEA0;
+    --cor02: #BF8773;
+    --cor03: #995842;
+    --cor04: #59201B;
+    --cor05: #FAF2E9;
+    --cor06: #111111;
+    --cor07-transp: #ffffff81;
+    --cor08: #F2F2F2;
+    --cor09: #242424e1;
+    --cor10: #e0dbdeea;
+
+    --font-padrao: 'Yanone Kaffeesatz', sans-serif;
+    --font-titulo: 'Fugaz One', cursiva;
+}
+
+.header {
+    width: 100vw; height: 120px; background: var(--cor06);
+    display: flex; justify-content: space-between; align-items: center; padding: 0 2.5rem;
+}
