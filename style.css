@@ -21,8 +21,72 @@
     --font-padrao: 'Yanone Kaffeesatz', sans-serif;
     --font-titulo: 'Fugaz One', cursiva;
 }
+/*seção inicial*/
+.s1 {
+    width: 100vw; height: 100vh;
+}
 
 .header {
-    width: 100vw; height: 120px; background: var(--cor06);
-    display: flex; justify-content: space-between; align-items: center; padding: 0 2.5rem;
+    width: 100%; height: 20vh; background: var(--cor06);
+    display: flex; justify-content: space-between; align-items: center; padding: 0 3rem;
+}
+.menu {
+    display: flex; gap: 1rem; list-style: none;
+}
+
+.menu a {
+    text-decoration: none; color: var(--cor05); font-family: var(--font-padrao); font-size: 1.5rem;
+    transition: .6s ease-out;
+}
+.menu a:hover {
+    color: var(--cor10);
+}
+
+#bnt-mobile {
+    color: var(--cor08); font-size: 1.6rem; display: none; cursor: pointer;
+}
+
+/*responsividade mobile*/
+
+@media screen and (max-width: 678px) {
+    #bnt-mobile {display: block;}
+
+    .menu {
+        display: block;
+        position: absolute; top: 20%; right: 0;
+        background: var(--cor06); 
+        width: 0; height: 80vh; 
+        visibility: hidden;
+        overflow: hidden;
+        transition: .6s;
+    }
+
+    .nav.active .menu {
+        display: block;
+        visibility: visible; width: 50%;
+    }
+    
+    .menu a {
+        display: block;
+        padding: 2rem 0;
+        margin: 0 2.5rem; text-align: center;
+        border-bottom: 2px solid var(--cor07-transp);
+    }
+}
+
+/*carrossel de imagens*/
+
+.carrossel {
+    width: 1000px; height: 450px; background: #59201B;
+    margin: 2rem auto; list-style: none; border-radius: 100px 100px 300px 100px;
+    display: flex;
+}
+
+.carrossel li {
+    width: 1000px; height: 450px;
+}
+
+.carrossel img {
+    width: 1000px; height: 450px;
+    border-radius: 100px 100px 300px 100px;
 }
