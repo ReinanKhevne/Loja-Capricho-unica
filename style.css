@@ -6,6 +6,13 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {overflow-x: hidden;}
+
+html {
+    scroll-behavior: smooth;
+}
+
 :root {
     --cor01: #F2BEA0;
     --cor02: #BF8773;
@@ -23,7 +30,7 @@
 }
 /*seção inicial*/
 .s1 {
-    width: 100vw; height: 100vh;
+    width: 100vw; height: 100vh; background: var(--cor06);
 }
 
 .header {
@@ -76,17 +83,76 @@
 
 /*carrossel de imagens*/
 
-.carrossel {
-    width: 1000px; height: 450px; background: #59201B;
-    margin: 2rem auto; list-style: none; border-radius: 100px 100px 300px 100px;
-    display: flex;
+.carrossel-conteiner {
+    width: 100vw; height: 80vh; display: flex; justify-content: center;
+    padding: 0 1.5rem;
 }
 
-.carrossel li {
+.carrossel-conteiner {
+    width: 1000px; height: 450px; margin: 2rem auto;
+    border-radius: 100px 100px 300px 100px; overflow: hidden;
+    box-shadow: 10px 8px 12px #00000083;
+}
+
+.carrossel-conteiner ul {
+    width: 1000px; height: 450px;
+    display: flex; list-style: none;
+}
+.carrossel-conteiner li {
+    position: relative; animation: slide 25s infinite ease-out;
+}
+
+.carrossel-conteiner img {
     width: 1000px; height: 450px;
 }
 
-.carrossel img {
-    width: 1000px; height: 450px;
-    border-radius: 100px 100px 300px 100px;
+@keyframes slide {
+    0% {left: 0px}
+    15% {left: 0px;}
+
+    25% {left: -1000px;}
+    40% {left: -1000px;}
+
+    50% {left: -2000px;}
+    65% {left: -2000px;}
+
+    75% {left: -3000px;}
+    90% {left: -3000px;}
+
+    100% {left: 0px;}
+}
+
+/*section s2- Atendimento*/
+
+.s2 {
+    width: 100vw; height: 100vh; background: var(--cor08);
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+}
+.title {
+    width: 100%; height: 100px; padding-left: 10rem;
+}
+.title h1 {
+    font-family: var(--font-titulo); font-size: 2rem;
+}
+
+.form {
+    width: 60%; height: 60%;
+    display: flex; flex-direction: column; align-items: flex-start;
+}
+
+#name, #email, #msg {
+    width: 50%; height: 2rem; outline: 0;
+    margin-bottom: 1.5rem; border-radius: 10px;
+    font-family: var(--font-padrao); font-size: 1.2rem;
+    padding: .5rem; border: 2px solid var(--cor04); background: 0;
+}
+#msg {height: 6rem;}
+
+::placeholder {
+    color: var(--cor09);
+}
+
+#bnt-form {
+    background: var(--cor04); border: 0; font-size: 1.2rem; padding: .3rem .9rem;
+    border-radius: 10px; color: var(--cor05); cursor: pointer;
 }
