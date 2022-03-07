@@ -166,7 +166,7 @@ html {
 }
 
 .whats {
-    margin-top: 2rem; background-color: mediumseagreen; color: var(--cor05);
+    margin-top: 2rem; background-color: #5FC2B7; color: var(--cor05);
     font-family: var(--font-padrao); font-size: 1.4rem; padding: .4rem; border-radius: 10px;
 }
 
@@ -178,9 +178,31 @@ html {
 /*section s3 - Sobre-nós*/
 
 .s3 {
-    width: 100vw; height: 100vh; background: #59201B;
+    width: 100vw; height: 100vh; background: var(--cor06);
 }
 
 .img-sobre {
-    width: 50%; height: 100%; background-color: #F2F2F2; z-index: 10000;
+    width: 50%; height: 100%; background-color: #5FC2B7;
+}
+
+.text-sobre {
+    width: 50%; height: 100%;
+    font-family: var(--font-titulo); padding: 4rem 2rem 0 5rem; color: var(--cor05);
+}
+.text-sobre h1 {
+    font-size: 2rem; margin-bottom: 2rem;
+}
+.text-sobre h2 {
+    font-size: 1.6rem; margin-bottom: 2rem;
+}
+.text-sobre p {
+    font-size: 1.1rem; margin-bottom: 2rem;
+}
+
+.midias {
+    display: flex; gap: 2rem;
+}
+.midias a {
+    text-decoration: none; font-family: var(--font-padrao); font-size: 1.8rem; color: var(--cor05);
+    background: var(--cor02); padding: .3rem .9rem; border-radius: 10px; cursor: pointer;
 }
