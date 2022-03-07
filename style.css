@@ -30,7 +30,7 @@ html {
 }
 /*seção inicial*/
 .s1 {
-    width: 100vw; height: 100vh; background: var(--cor06);
+    width: 100vw; height: 100vh; background: var(--cor06); position: relative;
 }
 
 .header {
@@ -122,11 +122,19 @@ html {
     100% {left: 0px;}
 }
 
+.reset {
+    width: 70px; height: 70px; background: var(--cor01);
+    position: fixed; bottom: 10%; right: 3%; border-radius: 20px; color: var(--cor05);
+    display: flex; justify-content: center; align-items: center; font-size: 2.4rem; cursor: pointer;
+    z-index: 10000;
+}
+
 /*section s2- Atendimento*/
 
 .s2 {
     width: 100vw; height: 100vh; background: var(--cor08);
     display: flex; flex-direction: column; align-items: center; justify-content: center;
+    position: relative;
 }
 .title {
     width: 100%; height: 100px; padding-left: 10rem;
@@ -160,4 +168,19 @@ html {
 .whats {
     margin-top: 2rem; background-color: mediumseagreen; color: var(--cor05);
     font-family: var(--font-padrao); font-size: 1.4rem; padding: .4rem; border-radius: 10px;
+}
+
+#img-contato {
+    width: 300px; height: 300px;
+    position: absolute; top: 10rem; right: 12rem;
+}
+
+/*section s3 - Sobre-nós*/
+
+.s3 {
+    width: 100vw; height: 100vh; background: #59201B;
+}
+
+.img-sobre {
+    width: 50%; height: 100%; background-color: #F2F2F2; z-index: 10000;
 }
