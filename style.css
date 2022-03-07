@@ -156,3 +156,8 @@ html {
     background: var(--cor04); border: 0; font-size: 1.2rem; padding: .3rem .9rem;
     border-radius: 10px; color: var(--cor05); cursor: pointer;
 }
+
+.whats {
+    margin-top: 2rem; background-color: mediumseagreen; color: var(--cor05);
+    font-family: var(--font-padrao); font-size: 1.4rem; padding: .4rem; border-radius: 10px;
+}
