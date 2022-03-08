@@ -123,7 +123,7 @@ html {
 }
 
 .reset {
-    width: 70px; height: 70px; background: var(--cor01);
+    width: 70px; height: 70px; background: var(--cor02);
     position: fixed; bottom: 10%; right: 3%; border-radius: 20px; color: var(--cor05);
     display: flex; justify-content: center; align-items: center; font-size: 2.4rem; cursor: pointer;
     z-index: 10000;
@@ -166,8 +166,11 @@ html {
 }
 
 .whats {
-    margin-top: 2rem; background-color: #5FC2B7; color: var(--cor05);
+    margin-top: 2rem; background-color: #5FC2B7; 
     font-family: var(--font-padrao); font-size: 1.4rem; padding: .4rem; border-radius: 10px;
+}
+.whats a {
+    text-decoration: none; color: var(--cor05);
 }
 
 #img-contato {
@@ -179,14 +182,18 @@ html {
 
 .s3 {
     width: 100vw; height: 100vh; background: var(--cor06);
+    display: flex; 
 }
 
 .img-sobre {
-    width: 50%; height: 100%; background-color: #5FC2B7;
+    width: 40%; height: 100%;
+    display: flex; justify-content: center; align-items: center;
+    background-image: url(https://images.pexels.com/photos/3735618/pexels-photo-3735618.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-size: cover; background-position: center center; 
 }
 
 .text-sobre {
-    width: 50%; height: 100%;
+    width: 60%; height: 100%;
     font-family: var(--font-titulo); padding: 4rem 2rem 0 5rem; color: var(--cor05);
 }
 .text-sobre h1 {
@@ -205,4 +212,11 @@ html {
 .midias a {
     text-decoration: none; font-family: var(--font-padrao); font-size: 1.8rem; color: var(--cor05);
     background: var(--cor02); padding: .3rem .9rem; border-radius: 10px; cursor: pointer;
+}
+
+#insta {
+    margin-top: 5rem; font-size: 3rem; color: var(--cor05);
+}
+#insta a {
+    text-decoration: none; 
 }
