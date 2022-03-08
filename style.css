@@ -128,11 +128,18 @@ html {
     display: flex; justify-content: center; align-items: center; font-size: 2.4rem; cursor: pointer;
     z-index: 10000;
 }
+@media screen and (max-width: 678px) {
+    .reset {
+        width: 50px; height: 50px;
+        position: fixed; bottom: 10%; right: 5%;
+        font-size: 2.2rem;
+    }
+}
 
 @media screen and (max-width: 1092px) {
-
-    .carrossel-conteiner {
-        width: 100%; height: 450px; margin: 2rem auto;
+  
+      .carrossel-conteiner {
+        width: 1000px; height: 450px; margin: auto 0;
         overflow: hidden; border-radius: 0;
         box-shadow: 10px 8px 12px #00000083;
     }
@@ -199,11 +206,11 @@ html {
 
 #bnt-form {
     background: var(--cor04); border: 0; font-size: 1.2rem; padding: .3rem .9rem;
-    border-radius: 10px; color: var(--cor05); cursor: pointer;
+    border-radius: 10px; color: var(--cor05); cursor: pointer; margin-bottom: 2rem;
 }
 
 .whats {
-    margin-top: 2rem; background-color: #5FC2B7; 
+    background-color: #5FC2B7; 
     font-family: var(--font-padrao); font-size: 1.4rem; padding: .4rem; border-radius: 10px;
 }
 .whats a {
@@ -214,13 +221,28 @@ html {
     width: 300px; height: 300px;
     position: absolute; top: 10rem; right: 12rem;
 }
+.whats-mobile {display: none;}
 
 /*responsividade mobile*/
 
 @media screen and (max-width: 768px) {
-    
+    .whats {display: none;}
+
+    .whats-mobile {display: block;}
+    .whats-mobile a {
+        text-decoration: none; color: var(--cor05); background-color: #5FC2B7;
+        padding: .3rem .6rem; border-radius: 10px; cursor: pointer; font-size: 1.5rem;
+        font-family: var(--font-padrao); 
+    }
 }
 
+@media screen and (max-width: 1100px) {
+    #img-contato {display: none;}
+    #name, #email, #msg {
+        width: 100%;
+    }
+    .title {padding-left: 4rem;}
+}
 
 /*section s3 - Sobre-nós*/
 
@@ -263,4 +285,22 @@ html {
 }
 #insta a {
     text-decoration: none; 
+}
+
+/*responsividade mobile*/
+
+@media screen and (max-width: 678px) {
+    .midias {
+        display: flex; flex-direction: column; width: 70%; gap: 1rem;
+    }
+    .midias a {font-size: 1.2rem; padding: .3rem .6rem; text-align: center; }
+    .img-sobre {display: none;}
+    .text-sobre {
+        width: 100%; padding: 1rem 2rem;
+    }
+    .text-sobre h2, p {
+        font-size: 1.3rem;
+    }
+    .text-sobre h1 {font-size: 1.6rem;}
+    #insta {margin-top: 2rem;}
 }
