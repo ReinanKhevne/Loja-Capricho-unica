@@ -215,6 +215,13 @@ html {
     position: absolute; top: 10rem; right: 12rem;
 }
 
+/*responsividade mobile*/
+
+@media screen and (max-width: 768px) {
+    
+}
+
+
 /*section s3 - Sobre-nós*/
 
 .s3 {
