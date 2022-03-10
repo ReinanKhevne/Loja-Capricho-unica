@@ -92,7 +92,7 @@ html {
 
 .conteiner-home {
     display: flex; justify-content: center;
-    width: 100%; height: 100%;
+    width: 100%; height: 100%; 
 }
 
 .carrossel-conteiner {
@@ -103,7 +103,7 @@ html {
 
 .carrossel-conteiner ul {
     width: 1000px; height: 450px;
-    display: flex; list-style: none;
+    display: flex; list-style: none; 
 }
 .carrossel-conteiner li {
     position: relative; animation: slide 25s infinite ease-out;
