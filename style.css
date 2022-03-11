@@ -98,7 +98,7 @@ html {
     width: 100%; height: 100%;
     background: var(--cor06);
     background-position: center center; background-size: cover;
-    display: flex; justify-content: center; 
+    display: flex; justify-content: center; overflow: hidden;
 }
 
 .carrossel {
@@ -141,13 +141,13 @@ html {
     width: 70px; height: 70px; background: var(--cor02);
     position: fixed; bottom: 10%; right: 3%; border-radius: 20px; color: var(--cor05);
     display: flex; justify-content: center; align-items: center; font-size: 2.4rem; cursor: pointer;
-    z-index: 10000; overflow: hidden;
+    z-index: 10000;
 }
 @media screen and (max-width: 678px) {
     .reset {
         width: 50px; height: 50px;
         position: fixed; bottom: 10%; right: 5%;
-        font-size: 2.2rem;
+        font-size: 2.2rem; overflow: hidden;
     }
 }
 
